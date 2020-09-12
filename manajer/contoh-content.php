@@ -555,7 +555,7 @@ include "fungsi_romawi.php";
 												
 												<div align="left">
 												<br />
-												  <a href="detail_evm.php?id_proyek=<?=$_GET['id_proyek']?>" class="btn bg-orange btn-sm" style="border-radius:40px" ><span class="fa fa-external-link"></span>  Lihat Selengkapnya</a>
+												  <!-- <a href="detail_evm.php?id_proyek=<?=$_GET['id_proyek']?>" class="btn bg-orange btn-sm" style="border-radius:40px" ><span class="fa fa-external-link"></span>  Lihat Selengkapnya</a> -->
 												</div>
 									   </div>			
 									 </div>
@@ -570,7 +570,7 @@ include "fungsi_romawi.php";
 									  <div class="box box-danger">
 										<!-- /.box-header -->
 										<div class="box-body">
-										<h4><i class="fa  fa-bar-chart-o"></i><span> Kurva-S</span></h4>
+										<h4><i class="fa  fa-bar-chart-o"></i><span> Data CPM</span></h4>
 										 <div align="right">
 										   <a href="gantt-chart.php?id_proyek=<?=$_GET['id_proyek'];?>" class="btn btn-danger btn-fill btn-sm" style="border-radius:40px"> <i class="fa fa-bar-chart-o "></i><span> Gantt Chart</span></a>
 										
@@ -593,7 +593,7 @@ include "fungsi_romawi.php";
 																	   WHERE evaluasi.id_proyek = '$id_proyek' ORDER BY minggu ASC");
 											}
 										?>
-										<div id="echart_line" style="height:400%; width:auto; margin:0 auto; max-width:100%"></div>
+										<!-- <div id="echart_line" style="height:400%; width:auto; margin:0 auto; max-width:100%"></div>
 										<script>
 										  var theme = {
 											  color: [
@@ -792,7 +792,7 @@ include "fungsi_romawi.php";
 											  ]
 											}]
 										  });
-										</script>
+										</script> -->
 										
 										 <div class="col-md-12">
 											  <div class="box collapsed-box">
@@ -946,8 +946,7 @@ include "fungsi_romawi.php";
 										  </div>
 										</div>	
 												
-										<div class="col-lg-12">
-										  <!-- small box -->
+										<!-- <div class="col-lg-12">
 										  <div class="small-box" style="background-color:#FF6666">
 											<div class="inner">
 											 <?php
@@ -983,10 +982,9 @@ include "fungsi_romawi.php";
 											  <i class="ion ion-pie-graph"></i>
 											</div>
 										 </div>
-										</div>	
+										</div>	 -->
 										
-										<div class="col-lg-12">
-										  <!-- small box -->
+										<!-- <div class="col-lg-12">
 										  <div class="small-box" style="background-color:#CCFFCC">
 											<div class="inner">
 											  <?php
@@ -1013,7 +1011,7 @@ include "fungsi_romawi.php";
 											  <i class="ion ion-pie-graph"></i>
 											</div>
 										 </div>
-										</div>
+										</div> -->
 									   </div>
 									</div>
 								  </div>

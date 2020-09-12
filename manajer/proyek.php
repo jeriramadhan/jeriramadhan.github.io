@@ -293,7 +293,10 @@ $link=koneksidb();
                       <tbody>
                       <?php
       
-                        $proyek = mysql_query("SELECT * FROM proyek GROUP BY id_proyek");
+												$proyek = mysql_query("SELECT * FROM proyek GROUP BY id_proyek");
+												if (!$proyek) { // add this check.
+    die('Invalid query: ' . mysql_error());
+}
                         $no=0;
                         while($r=mysql_fetch_array($proyek)){
                           $n=1;

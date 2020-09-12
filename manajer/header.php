@@ -289,19 +289,23 @@ $q=mysql_fetch_array($sql);
             </span>
           </a>
           <ul class="treeview-menu"style="border-radius:40px">
-            <li><a href="evaluasi.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-area-chart"></i> <span>Data Evaluasi</span></a></li>
+            <!-- <li><a href="evaluasi.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-area-chart"></i> <span>Data Evaluasi</span></a></li> -->
 			<li><a href="progres.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-check-square-o"></i>Data Progres</a></li>
           </ul>
         </li> 
-		<br>
-		<li class="header">DATA MASTER</li>
+		
+    
+
+		<li>
+		  <a href="jenis_proyek.php"style="border-radius:40px"><i class="fa  fa-database"></i> <span>Jenis Proyek</span></a></li> 
+    <!-- <li class="header">DATA MASTER</li>
 		
 		<li>
-          <a href="satuan.php?id_proyek=<?php echo $id_proyek?>"style="border-radius:40px"><i class="fa fa-pencil"></i><span> Satuan</span></a></li>
+          <a href="satuan.php?id_proyek=<?php echo $id_proyek?>"style="border-radius:40px"><i class="fa fa-pencil"></i><span> Satuan</span></a></li> 
 		 
 		<br>
 		<li>
-		  <a href="jenis_proyek.php"style="border-radius:40px"><i class="fa  fa-database"></i> <span>Jenis Proyek</span></a></li> 
+		  <a href="jenis_proyek.php"style="border-radius:40px"><i class="fa  fa-database"></i> <span>Jenis Proyek</span></a></li>  -->
       </ul>
     </section>
     <!-- /.sidebar -->
