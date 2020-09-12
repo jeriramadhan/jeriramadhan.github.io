@@ -12,12 +12,12 @@ include "fungsi_romawi.php";
               <li class="active"><a href="#info_proyek" data-toggle="tab">
 								<!-- <i class="fa  fa-building text-green"> </i> -->
 								 Info Proyek</a></li>
-              <li><a href="#perbandingan" data-toggle="tab">
-								<!-- <i class="fa  fa-warning text-red"> -->
+              <!-- <li><a href="#perbandingan" data-toggle="tab">
+								<i class="fa  fa-warning text-red">
 									 </i> Perkiraan Biaya dan Waktu Proyek</a></a></li>
 			  <li><a href="#perbandingan_percepatan" data-toggle="tab">
-					<!-- <i class="fa fa-check-circle-o text-yellow"> </i> -->
-					 Hasil Percepatan Proyek</a></a></li>
+					<i class="fa fa-check-circle-o text-yellow"> </i>
+					 Hasil Percepatan Proyek</a></a></li> -->
             </ul>
 			
 			<div class="tab-content">
