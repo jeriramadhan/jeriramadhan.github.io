@@ -1,7 +1,7 @@
 <?php
 	function koneksidb()
 	{ 
-		$host = 'localhost';
+		$host = 'bimbelsic.com';
 		$database = 'u8961758_pm';
 		$user = 'u8961758_jeri';
 		$password = 'jerijeri';
