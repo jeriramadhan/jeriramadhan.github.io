@@ -9,9 +9,15 @@ include "fungsi_romawi.php";
 		  
 		  <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#info_proyek" data-toggle="tab"><i class="fa  fa-building text-green"> </i> Info Proyek</a></li>
-              <li><a href="#perbandingan" data-toggle="tab"><i class="fa  fa-warning text-red"> </i> Perkiraan Biaya dan Waktu Proyek</a></a></li>
-			  <li><a href="#perbandingan_percepatan" data-toggle="tab"><i class="fa fa-check-circle-o text-yellow"> </i> Hasil Percepatan Proyek</a></a></li>
+              <li class="active"><a href="#info_proyek" data-toggle="tab">
+								<!-- <i class="fa  fa-building text-green"> </i> -->
+								 Info Proyek</a></li>
+              <li><a href="#perbandingan" data-toggle="tab">
+								<!-- <i class="fa  fa-warning text-red"> -->
+									 </i> Perkiraan Biaya dan Waktu Proyek</a></a></li>
+			  <li><a href="#perbandingan_percepatan" data-toggle="tab">
+					<!-- <i class="fa fa-check-circle-o text-yellow"> </i> -->
+					 Hasil Percepatan Proyek</a></a></li>
             </ul>
 			
 			<div class="tab-content">
@@ -261,7 +267,8 @@ include "fungsi_romawi.php";
 								  <!-- Info Boxes Style 2 -->
 									<div class="info-box" style="background-color:#fff">
 										<div class="info-box-content" style="margin-left:5px">
-										   <i class="fa  fa-user text-orange"> </i><span> Pemilik Proyek</span>
+											 <!-- <i class="fa  fa-user text-orange"> </i> -->
+											 <span> Pemilik Proyek</span>
 											  <span class="info-box-number">
 												  <?php
 												   if(isset($_GET['id_proyek'])) 
@@ -282,7 +289,8 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <i class="fa  fa-map-o text-blue"> </i><span> Lokasi Proyek</span>
+												 <!-- <i class="fa  fa-map-o text-blue"> </i> -->
+												 <span> Lokasi Proyek</span>
 											   <span class="info-box-number">
 												<code>
 												<?php
@@ -308,7 +316,8 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <i class="fa  fa-money"> </i><span> Nilai Proyek</span>
+												 <!-- <i class="fa  fa-money"> </i> -->
+												 <span> Nilai Proyek</span>
 											   <span class="info-box-number">
 												<?php
 												   if(isset($_GET['id_proyek'])) 
@@ -332,7 +341,9 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <i class="fa  fa-list-alt text-red"> </i><span> No. SPK</span>
+											   <!-- <i class="fa  fa-list-alt text-red">  -->
+
+												 </i><span> No. SPK</span>
 											   <span class="info-box-number">
 												<?php
 												   if(isset($_GET['id_proyek'])) 
@@ -361,7 +372,8 @@ include "fungsi_romawi.php";
 									 <!-- MAP & BOX PANE -->
 									   <div class="info-box" style="background-color:#fff">
 										<div class="info-box-content" style="margin-left:20px">
-										   <i class="fa  fa-calendar text-green"> </i><span> Tanggal Mulai</span>
+										   <!-- <i class="fa  fa-calendar text-green"> -->
+												  </i><span> Tanggal Mulai</span>
 											  <span class="info-box-number">
 												  <?php
 												   if(isset($_GET['id_proyek'])) 
@@ -381,7 +393,9 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <i class="fa  fa-calendar text-green"> </i><span> Tanggal Selesai</span>
+											   <!-- <i class="fa  fa-calendar text-green">  -->
+
+												 </i><span> Tanggal Selesai</span>
 											   <span class="info-box-number">
 												<?php
 												   if(isset($_GET['id_proyek'])) 
@@ -403,7 +417,8 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <i class="fa  fa-repeat"> </i><span> Durasi Proyek</span>
+												 <!-- <i class="fa  fa-repeat"> </i> -->
+												 <span> Durasi Proyek</span>
 											   <span class="info-box-number">
 												<?php
 												   if(isset($_GET['id_proyek'])) 
@@ -426,7 +441,8 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											  <i class="fa fa-pencil-square-o text-red"> </i><span> ID Proyek</span>
+												<!-- <i class="fa fa-pencil-square-o text-red"> </i> -->
+												<span> ID Proyek</span>
 											   <span class="info-box-number">
 												<?php
 												   if(isset($_GET['id_proyek'])) 
@@ -454,7 +470,8 @@ include "fungsi_romawi.php";
 								   <div class="col-md-5">
 									 <div class="box box-solid box-default">
 									   <div class="box-body">  
-										   <i class="fa fa-pencil-square-o text-navy"> </i><span> Progres Proyek</span>
+											 <!-- <i class="fa fa-pencil-square-o text-navy"> </i> -->
+											 <span> Progres Proyek</span>
 										   <br />
 											  <center>
 											   <?php

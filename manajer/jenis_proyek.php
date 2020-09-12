@@ -8,7 +8,7 @@ $link=koneksidb();
     <!-- Content Header (Page header) -->
   <section class="content-header">
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-database"></i>Jenis Proyek</a></li>
+        <li><a href="#"><i class="fa fa-database"></i>Data Kegiatan</a></li>
       </ol>
   </section>
   <section class="content-header">
@@ -82,14 +82,14 @@ $link=koneksidb();
         <div class="col-xs-12">
 		   <div class="box box-info">
             <div class="box-header">
-              <h3 class="box-title">Data Jenis Proyek</h3>
+              <h3 class="box-title">Data Kegiatan Proyek</h3>
 			</div><!-- /.box-header -->
 			
 		 <div class="box-body">			
 		  <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#lihat_kegiatan" data-toggle="tab">Lihat Jenis Proyek</a></li>
-              <li><a href="#tambah_kegiatan" data-toggle="tab">Tambah Jenis Proyek</a></li>
+              <li class="active"><a href="#lihat_kegiatan" data-toggle="tab">Lihat Jenis Kegiatan</a></li>
+              <li><a href="#tambah_kegiatan" data-toggle="tab">Tambah Jenis Kegiatan</a></li>
             </ul>
 			
 			<div class="tab-content">
@@ -98,13 +98,13 @@ $link=koneksidb();
                 <div class="post">
                     <br />
 					    <div class="box-header with-border">
-						  <h3 class="box-title">Form Tambah Jenis Proyek</h3>
+						  <h3 class="box-title">Form Tambah Jenis Kegiatan</h3>
 						</div>
 						<!-- /.box-header -->				
 						<!-- form start -->
 						<form role="form" action="fungsi.php?proses=tambah_jenis" method="POST" class="form-horizontal" id="tambah">					
 						  <div class="form-group">
-							 <label class="col-sm-2 control-label">Nama Jenis Proyek : </label>
+							 <label class="col-sm-2 control-label">Nama Jenis Kegiatan : </label>
 							 <div class="col-sm-3">
 								<input type="text" class="form-control" name="nama_jenis" onkeyup="this.value=this.value.replace(/[^\\a-z\\A-Z\\ \\]/g, '')" required>
 							 </div>
@@ -130,7 +130,7 @@ $link=koneksidb();
                 <div class="post">
 				<br />
 					<div class="box-header with-border">
-					  <h2 class="box-title">Data Jenis Proyek</h2>
+					  <h2 class="box-title">Data Jenis Kegiatan</h2>
 					</div>
 				
 					<!-- /.box-header -->
@@ -139,7 +139,7 @@ $link=koneksidb();
 					      <thead>
 							<tr>
 							  <th width="20">No</th>
-							  <th width="112">Nama Jenis Proyek</th>
+							  <th width="112">Nama Jenis Kegiatan</th>
 							  <th width="109">Aksi</th>
 							</tr>
 						  </thead>

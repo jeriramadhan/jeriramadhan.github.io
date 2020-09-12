@@ -252,10 +252,12 @@ $q=mysql_fetch_array($sql);
 		<li>
           <a href="index.php?id_proyek=<?php echo $id_proyek?>" style="border-radius:40px"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
 		<li>
-          <a href="proyek.php?id_proyek=<?php echo $id_proyek?>" style="border-radius:40px"><i class="fa  fa-building-o"></i> <span>Data Proyek</span></a></li>     
+          <a href="proyek.php?id_proyek=<?php echo $id_proyek?>" style="border-radius:40px"><i class="fa  fa-building-o"></i> <span>Data Proyek</span></a></li>    
+          <li>
+		  <a href="jenis_proyek.php"style="border-radius:40px"><i class="fa  fa-database"></i> <span>Data Kegiatan</span></a></li>  
         <li class="treeview">
           <a href="#"style="border-radius:40px">
-            <i class="fa  fa-book"></i> <span>Daftar Harga</span>
+            <i class="fa  fa-book"></i> <span>Data Harga</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -296,8 +298,7 @@ $q=mysql_fetch_array($sql);
 		
     
 
-		<li>
-		  <a href="jenis_proyek.php"style="border-radius:40px"><i class="fa  fa-database"></i> <span>Jenis Proyek</span></a></li> 
+		
     <!-- <li class="header">DATA MASTER</li>
 		
 		<li>
