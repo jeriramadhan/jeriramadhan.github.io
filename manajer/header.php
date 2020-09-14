@@ -203,10 +203,10 @@ $q=mysql_fetch_array($sql);
               <ul class="dropdown-menu" s>
                 <!-- User image -->
                 <li>&nbsp;</li>
-                <!-- <li><a href="edit_password.php?id_proyek=<?php echo $id_proyek?>"><span class="fa fa-wrench"></span> Ubah Password</a></li>
-			  <li class="divider"></li> -->
-                <!-- <li><a href="user.php?id_proyek=<?php echo $id_proyek?>"><span class="fa fa-users"></span>Olah Pengguna</a></li>
-			  <li class="divider"></li> -->
+                <li><a href="edit_password.php?id_proyek=<?php echo $id_proyek?>"><span class="fa fa-wrench"></span> Ubah Password</a></li>
+			  <li class="divider"></li>
+                <li><a href="user.php?id_proyek=<?php echo $id_proyek?>"><span class="fa fa-users"></span>Olah Pengguna</a></li>
+			  <li class="divider"></li>
                 <li><a href="../logout.php"><span class="fa fa-power-off"></span> Keluar</a></li>
                 <li class="divider"></li>
                 <li class="user-footer">

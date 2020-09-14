@@ -267,7 +267,7 @@ include "fungsi_romawi.php";
 								  <!-- Info Boxes Style 2 -->
 									<div class="info-box" style="background-color:#fff">
 										<div class="info-box-content" style="margin-left:5px">
-											 <!-- <i class="fa  fa-user text-orange"> </i> -->
+											 <i class="fa  fa-user text-orange"> </i>
 											 <span> Pemilik Proyek</span>
 											  <span class="info-box-number">
 												  <?php
@@ -289,7 +289,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-												 <!-- <i class="fa  fa-map-o text-blue"> </i> -->
+												 <i class="fa  fa-map-o text-blue"> </i>
 												 <span> Lokasi Proyek</span>
 											   <span class="info-box-number">
 												<code>
@@ -316,7 +316,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-												 <!-- <i class="fa  fa-money"> </i> -->
+												 <i class="fa  fa-money"> </i>
 												 <span> Nilai Proyek</span>
 											   <span class="info-box-number">
 												<?php
@@ -341,7 +341,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <!-- <i class="fa  fa-list-alt text-red">  -->
+											   <i class="fa  fa-list-alt text-red"> 
 
 												 </i><span> No. SPK</span>
 											   <span class="info-box-number">
@@ -372,7 +372,7 @@ include "fungsi_romawi.php";
 									 <!-- MAP & BOX PANE -->
 									   <div class="info-box" style="background-color:#fff">
 										<div class="info-box-content" style="margin-left:20px">
-										   <!-- <i class="fa  fa-calendar text-green"> -->
+										   <i class="fa  fa-calendar text-green">
 												  </i><span> Tanggal Mulai</span>
 											  <span class="info-box-number">
 												  <?php
@@ -393,7 +393,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-											   <!-- <i class="fa  fa-calendar text-green">  -->
+											   <i class="fa  fa-calendar text-green"> 
 
 												 </i><span> Tanggal Selesai</span>
 											   <span class="info-box-number">
@@ -417,7 +417,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-												 <!-- <i class="fa  fa-repeat"> </i> -->
+												 <i class="fa  fa-repeat"> </i>
 												 <span> Durasi Proyek</span>
 											   <span class="info-box-number">
 												<?php
@@ -441,7 +441,7 @@ include "fungsi_romawi.php";
 											  </div>
 											  <span class="progress-description">
 											   
-												<!-- <i class="fa fa-pencil-square-o text-red"> </i> -->
+												<i class="fa fa-pencil-square-o text-red"> </i>
 												<span> ID Proyek</span>
 											   <span class="info-box-number">
 												<?php
@@ -470,7 +470,7 @@ include "fungsi_romawi.php";
 								   <div class="col-md-5">
 									 <div class="box box-solid box-default">
 									   <div class="box-body">  
-											 <!-- <i class="fa fa-pencil-square-o text-navy"> </i> -->
+											 <i class="fa fa-pencil-square-o text-navy"> </i>
 											 <span> Progres Proyek</span>
 										   <br />
 											  <center>
