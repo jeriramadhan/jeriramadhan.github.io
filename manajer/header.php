@@ -127,7 +127,7 @@ $q=mysql_fetch_array($sql);
 				  ?>
               </a>
 
-              <!-- <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li class="header">Pemberitahuan</li>
 
                 <br>
@@ -180,7 +180,7 @@ $q=mysql_fetch_array($sql);
                 </li>
 
                 <li class="divider"></li>
-              </ul> -->
+              </ul>
             <!-- </li> -->
 
             <?php  
