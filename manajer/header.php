@@ -86,9 +86,9 @@ $q=mysql_fetch_array($sql);
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
 
-            <!-- <li class="dropdown notifications-menu">
+            <li class="dropdown notifications-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                <i class="fa fa-bell fa-lg text-red"></i> -->
+                <i class="fa fa-bell fa-lg text-red"></i>
 
                 <?php
 			  
