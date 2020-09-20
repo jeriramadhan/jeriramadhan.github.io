@@ -300,10 +300,11 @@ $q=mysql_fetch_array($sql);
           </li>
 
           <li><a href="progres.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-check-square-o"></i>Data Progres</a></li>
+          <li><a href="progres_pelaksana.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-check-square-o"></i>Data Progres Pelaksana</a></li>
 
           <!-- <li class="treeview">
             <a href="#" style="border-radius:40px">
-              <i class="fa fa-bar-chart-o"></i> <span>Evaluasi Proyek</span>
+              <i class="fa fa-bar-chart-o"></i> <span>Progress Proyek</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right "></i>
               </span>
@@ -311,6 +312,7 @@ $q=mysql_fetch_array($sql);
             <ul class="treeview-menu" style="border-radius:40px">
               <li><a href="evaluasi.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-area-chart"></i> <span>Data Evaluasi</span></a></li>
               <li><a href="progres.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-check-square-o"></i>Data Progres</a></li>
+              <li><a href="progres_pelaksana.php?id_proyek=<?php echo $id_proyek?>"><i class="fa fa-check-square-o"></i>Data Progres Pelaksana</a></li>
             </ul>
           </li> -->
 
