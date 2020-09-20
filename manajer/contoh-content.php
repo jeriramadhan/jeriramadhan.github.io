@@ -428,7 +428,7 @@ include "fungsi_romawi.php";
 													
 														while($r=mysql_fetch_array($kegiatan))
 														{
-														  echo" $r[durasi_proyek]"." hari";
+														  echo" $r[durasi_proyek]"." Jam";
 														 
 														}
 												   }
@@ -946,6 +946,36 @@ include "fungsi_romawi.php";
 																			   where jadwal.id_proyek ='$id_proyek' and jadwal.sl =0");
 														   
 															
+														  while($nama = mysql_fetch_array($cek2))
+														  {
+															  $kegiatan = $nama['nama_sub'];
+												   ?>  
+																<i class="fa  fa-check-square-o"> </i> <b><?php echo $kegiatan ?></b><br>
+												  <?php  
+														  }
+														}
+												  ?>
+													   
+												</div>
+												<div class="icon">
+												  <i class="ion ion-stats-bars"></i>
+												</div>
+										  </div>
+										</div>	
+										<div class="col-lg-12">
+										   <!-- small box -->
+											  <div class="small-box " style="background-color:#e3aaaa">
+												<div class="inner">
+												  <p><h4>Pekerjaan Slack</h4></p>
+												  <?php
+														if(isset($_GET['id_proyek'])) 
+														{ 
+														   $id_proyek = $_GET['id_proyek'];
+														   $cek2 = mysql_query("SELECT jadwal.id_proyek,jadwal.id_sub,nama_sub,id_jadwal,tanggal_mulai_j,tanggal_selesai_j,durasi_kegiatan,es,ef,ls,lf,sl
+		                         FROM jadwal
+								 JOIN sub_pekerjaan ON (sub_pekerjaan.id_sub=jadwal.id_sub)
+								 JOIN master_sub_pekerjaan ON (master_sub_pekerjaan.id_master_sub=sub_pekerjaan.id_master_sub)
+								 WHERE jadwal.id_proyek='$id_proyek' and jadwal.sl<>0");
 														  while($nama = mysql_fetch_array($cek2))
 														  {
 															  $kegiatan = $nama['nama_sub'];

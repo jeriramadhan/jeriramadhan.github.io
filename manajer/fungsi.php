@@ -28,7 +28,8 @@ if (isset($_GET['proses']))
 		$nama_proyek = $_POST['nama_proyek'];
 		$biaya = str_replace(',', '.',str_replace('.', '',$_POST['biaya']));
 		$tanggal_mulai = date('Y-m-d',strtotime($_POST['tanggal_mulai']));
-		$durasi_proyek1 = $_POST['durasi_proyek'] - 1;
+		$durasix = $_POST['durasi_proyek'] - 1;
+		$durasi_proyek1 = round($durasix/4);
 		$durasi_proyek = $_POST['durasi_proyek'];
 		$tanggal_selesai = date('Y-m-d',strtotime('+'.$durasi_proyek1.'days',strtotime($tanggal_mulai)));
 		$pemilik = $_POST['pemilik'];
@@ -100,7 +101,8 @@ if (isset($_GET['proses2']))
 		$nama_proyek = $_POST['nama_proyek'];
 		$biaya = str_replace(',', '.',str_replace('.', '',$_POST['biaya']));
 		$tanggal_mulai = date('y-m-d',strtotime($_POST['tanggal_mulai']));
-		$durasi_proyek1 = $_POST['durasi_proyek'] - 1;
+		$durasix = $_POST['durasi_proyek'] - 1;
+		$durasi_proyek1 = round($durasix/4);
 		$durasi_proyek = $_POST['durasi_proyek'];
 		$tanggal_selesai = date('y-m-d',strtotime('+'.$durasi_proyek1.'days',strtotime($tanggal_mulai)));
 		$pemilik = $_POST['pemilik'];
@@ -937,7 +939,8 @@ if (isset($_GET['proses_tambah_j']))
 		$id_sub=$_POST['id_sub'];
 		$tanggal_mulai_j = date('Y-m-d',strtotime($_POST['tanggal_mulai_j']));
 		$durasi_kegiatan = $_POST['durasi_kegiatan'];
-		$durasi_kegiatan1 = $_POST['durasi_kegiatan'] - 1;
+		$durasix = $_POST['durasi_kegiatan'] - 1;
+		$durasi_kegiatan1 = round($durasix/4);
 		$tanggal_selesai_j = date('Y-m-d',strtotime('+'.$durasi_kegiatan1.'days',strtotime($tanggal_mulai_j)));
 
 		   $input = "INSERT INTO jadwal (id_proyek, id_sub, tanggal_mulai_j, tanggal_selesai_j, durasi_kegiatan) VALUES ('$id_proyek','$id_sub','$tanggal_mulai_j','$tanggal_selesai_j','$durasi_kegiatan')";

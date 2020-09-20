@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>CV. BINTANG UTARA</title>
+	<title>CPM</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -62,22 +62,6 @@
 		</div>	
 	</div>
 			
-		 <div id="kiri">
-		 	<div align="center" style="font-family:berlin Sans FB; font-size:50px; font-variant:small-caps;">	
-			   <img src="style/dist/img/bu.jpg" width="70px"><font size="+5"> CV. Bintang Utara</font>
-			</div>
-		 	<img src="style/dist/img/tenaga.jpg" class="tengah" width="640px">
-			<font size="+2" style="margin-left:50px">
-			   Bintang Utara adalah sebuah perusahaan yang bergerak
-			</font>
-		   <font size="+2" style="margin-left:50px">
-			   di bidang konstruksi.
-		       Khususnya bidang pembangunan
-		   </font>
-		   <font size="+2" style="margin-left:50px">
-			   jembatan, rumah layak huni, dan terowongan.
-		   </font>
-		</div>
 	 		
 			
 		<div style="width:600px; margin:auto">

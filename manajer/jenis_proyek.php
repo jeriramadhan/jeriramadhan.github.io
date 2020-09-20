@@ -131,6 +131,9 @@ $link=koneksidb();
 				<br />
 					<div class="box-header with-border">
 					  <h2 class="box-title">Data Jenis Kegiatan</h2>
+						<div class="pull-right">
+<a href="cetakjenisproyek.php" class="btn btn-info btn-fill btn-sm">Cetak <i class="fa fa-print"></i></a>
+</div>
 					</div>
 				
 					<!-- /.box-header -->

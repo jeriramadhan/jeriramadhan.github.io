@@ -77,7 +77,7 @@
                   <div class="col-sm-2">
                     <div class="input-group">
                       <input type="number" min="1" pattern=" >1" class="form-control" name="durasi_proyek" value="<?php echo $r['durasi_proyek'] ?>" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" requiredrequired>
-                      <span class="input-group-addon">Hari</span>
+                      <span class="input-group-addon">Jam</span>
                     </div>  
                   </div>
                 </div>
