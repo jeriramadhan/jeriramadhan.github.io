@@ -216,6 +216,7 @@ $link=koneksidb();
 											</div>
 										</div>
 
+
 										<div class="form-group">
 											<label class="col-sm-2 control-label">Nama Proyek : </label>
 											<div class="col-sm-3">
@@ -254,6 +255,16 @@ $link=koneksidb();
 											<input type="text" class="form-control" name="lokasi" required>
 										</div>
 									</div>
+																			<div class="form-group">
+										<label class="col-sm-2 control-label">Jam Kerja/Hari: </label>
+										<div class="col-sm-3">
+												<div class="input-group">
+													<input type="number" min="1" pattern=" >1" class="form-control" name="jam"
+														onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" required>
+													<span class="input-group-addon">Jam</span>
+												</div>
+											</div>
+										</div>
 
 									<!-- /.box-body -->
 

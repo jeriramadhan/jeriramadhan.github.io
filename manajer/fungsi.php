@@ -29,11 +29,13 @@ if (isset($_GET['proses']))
 		$biaya = str_replace(',', '.',str_replace('.', '',$_POST['biaya']));
 		$tanggal_mulai = date('Y-m-d',strtotime($_POST['tanggal_mulai']));
 		$durasix = $_POST['durasi_proyek'] - 1;
-		$durasi_proyek1 = round($durasix/4);
+		$jam = $_POST['jam'];
+		$durasi_proyek1 = round($durasix/$jam);
 		$durasi_proyek = $_POST['durasi_proyek'];
 		$tanggal_selesai = date('Y-m-d',strtotime('+'.$durasi_proyek1.'days',strtotime($tanggal_mulai)));
 		$pemilik = $_POST['pemilik'];
 		$lokasi = $_POST['lokasi'];
+		
 		
 		$arr = explode(' ', $pemilik);
 		$singkatan = "";
@@ -63,10 +65,10 @@ if (isset($_GET['proses']))
 		}
 
 		   $input = "INSERT INTO proyek 
-		            (id_proyek, username, id_jenis, no_spk, nama_proyek, tanggal_mulai, tanggal_selesai, durasi_proyek, biaya, nilai_proyek, pemilik, lokasi)
+		            (id_proyek, username, id_jenis, no_spk, nama_proyek, tanggal_mulai, tanggal_selesai, durasi_proyek, biaya, nilai_proyek, pemilik, lokasi, jam)
 					VALUES
 				    ('$id_proyek','$username','$id_jenis','$no_spk','$nama_proyek','$tanggal_mulai','$tanggal_selesai',
-				    '$durasi_proyek','$biaya','$np','$pemilik','$lokasi')";
+				    '$durasi_proyek','$biaya','$np','$pemilik','$lokasi','$jam')";
 		   
 		   $query_input = mysql_query($input);
 
@@ -102,11 +104,13 @@ if (isset($_GET['proses2']))
 		$biaya = str_replace(',', '.',str_replace('.', '',$_POST['biaya']));
 		$tanggal_mulai = date('y-m-d',strtotime($_POST['tanggal_mulai']));
 		$durasix = $_POST['durasi_proyek'] - 1;
-		$durasi_proyek1 = round($durasix/4);
+		$jam = $_POST['jam'];
+		$durasi_proyek1 = round($durasix/$jam);
 		$durasi_proyek = $_POST['durasi_proyek'];
 		$tanggal_selesai = date('y-m-d',strtotime('+'.$durasi_proyek1.'days',strtotime($tanggal_mulai)));
 		$pemilik = $_POST['pemilik'];
 		$lokasi = $_POST['lokasi'];
+		
 		
 		$arr = explode(' ', $pemilik);
 		$singkatan = "";
@@ -145,7 +149,8 @@ if (isset($_GET['proses2']))
 								 biaya='$biaya',
 								 nilai_proyek='$np',
 								 pemilik='$pemilik',
-								 lokasi='$lokasi'
+								 lokasi='$lokasi',
+								 jam='$jam'
 		                         WHERE id_proyek='$id_proyek'");
 								 
 	 	$query_edit = mysql_query($sql);

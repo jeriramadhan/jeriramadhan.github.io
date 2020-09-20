@@ -81,6 +81,16 @@
                     </div>  
                   </div>
                 </div>
+                <div class="form-group">
+                										<label class="col-sm-2 control-label">Jam Kerja/Hari: </label>
+										<div class="col-sm-2">
+												<div class="input-group">
+													<input type="number" min="1" pattern=" >1" class="form-control" name="jam"
+														value="<?php echo $r['jam'] ?>" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" required>
+													<span class="input-group-addon">Jam</span>
+												</div>
+											</div>
+										</div>
 				
 				  <div class="form-group">
                   <label class="col-sm-2 control-label">Biaya: </label>
