@@ -64,12 +64,12 @@ $q=mysql_fetch_array($sql);
       <a href="#" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-          <font size="4px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">BU
+          <font size="4px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">MB
           </font>
         </span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-          <font size="5px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">CPM
+          <font size="5px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">CV.Maju Bintang
           </font>
         </span>
       </a>
