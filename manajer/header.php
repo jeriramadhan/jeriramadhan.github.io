@@ -69,7 +69,7 @@ $q=mysql_fetch_array($sql);
         </span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-          <font size="5px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">CV.Maju Bintang
+          <font size="5px" color="#FFFFFF" face="berlin Sans FB" style="font-variant:small-caps;font-weight:800">CPM Maju
           </font>
         </span>
       </a>
