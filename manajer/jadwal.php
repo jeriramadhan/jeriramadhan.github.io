@@ -18,10 +18,11 @@ include "fungsi_romawi.php";
 							    ON (sub_pekerjaan.id_master_sub=master_sub_pekerjaan.id_master_sub)
 								WHERE sub_pekerjaan.id_proyek ='$id'");
 
-  $getproyek = mysql_query("SELECT tanggal_selesai,tanggal_mulai FROM proyek WHERE id_proyek = '$id' ");
+  $getproyek = mysql_query("SELECT jam,tanggal_selesai,tanggal_mulai FROM proyek WHERE id_proyek = '$id' ");
   $p = mysql_fetch_array($getproyek);
   $tgl_mulai = date('m/d/Y',strtotime($p['tanggal_mulai']));
-  $tgl_selesai = date('m/d/Y',strtotime($p['tanggal_selesai']));
+	$tgl_selesai = date('m/d/Y',strtotime($p['tanggal_selesai']));
+	$jam = $p['jam'];
 ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -174,6 +175,7 @@ include "fungsi_romawi.php";
 						  <form role="form" action="fungsi.php?proses_tambah_j=tambah_jadwal" method="POST" class="form-horizontal">
 						  <div class="box-body">
 						  <input type="hidden" class="form-control" name="id_proyek" value="<?=$_GET['id_proyek'] ?>">
+							<input type="hidden" class="form-control" name="jam" value="<?=$jam?>">
 							<div class="form-group">
 							  <label class="col-sm-3 control-label">Nama Pekerjaan : </label>
 							  <div class="col-sm-4">
@@ -200,7 +202,7 @@ include "fungsi_romawi.php";
 							  <div class="col-sm-2">
 								<div class="input-group">
 								  <input type="text" minlength="1" maxlength="3" class="form-control" name="durasi_kegiatan" onkeyup="this.value=this.value.replace(/[^\\0-9\\]/g, '')" required>
-								  <span class="input-group-addon">Hari</span>
+								  <span class="input-group-addon">Jam</span>
 								</div>  
 							  </div>
 							</div>
@@ -283,7 +285,7 @@ include "fungsi_romawi.php";
 								   ?>
 										  <td><?php echo date ("d/m/Y", strtotime($r['tanggal_mulai_j']))?></td>
 										  <td><?php echo date ("d/m/Y", strtotime($r['tanggal_selesai_j']))?></td>
-										  <td><?php echo $r['durasi_kegiatan']?> hari</td>
+										  <td><?php echo $r['durasi_kegiatan']?> jam</td>
 										  <td>
 							 
 								   <?php 

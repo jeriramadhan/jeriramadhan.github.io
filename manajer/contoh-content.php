@@ -923,7 +923,7 @@ include "fungsi_romawi.php";
 											  <div class="small-box" style="background-color:#339999">
 												<div class="inner">
 												  <p>Jumlah Durasi Jalur Kritis</p>
-												  <p><h3><?php echo "$cpm" ?> Hari</h3></p>
+												  <p><h3><?php echo "$cpm" ?> Jam</h3></p>
 												</div>
 												<div class="icon">
 												  <i class="ion ion-stats-bars"></i>
@@ -1149,7 +1149,7 @@ include "fungsi_romawi.php";
 																						  $sql4 = mysql_query ("SELECT * from jadwal where id_jadwal = '$id'")or die(mysql_error());
 																						  $s4=mysql_fetch_array($sql4);
 																						?>
-																						 <?php echo $s4['durasi_kegiatan']." hari"?>
+																						 <?php echo $s4['durasi_kegiatan']." Jam"?>
 																						 
 																					</tr>
 																		   <?php  }?>

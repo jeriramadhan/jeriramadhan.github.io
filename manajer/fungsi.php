@@ -943,9 +943,10 @@ if (isset($_GET['proses_tambah_j']))
 		$id_proyek = $_POST['id_proyek'];
 		$id_sub=$_POST['id_sub'];
 		$tanggal_mulai_j = date('Y-m-d',strtotime($_POST['tanggal_mulai_j']));
-		$durasi_kegiatan = $_POST['durasi_kegiatan'];
 		$durasix = $_POST['durasi_kegiatan'] - 1;
-		$durasi_kegiatan1 = round($durasix/4);
+		$jam =  $_POST['jam'];
+		$durasi_kegiatan = $_POST['durasi_kegiatan'];
+		$durasi_kegiatan1 = round($durasix/$jam);
 		$tanggal_selesai_j = date('Y-m-d',strtotime('+'.$durasi_kegiatan1.'days',strtotime($tanggal_mulai_j)));
 
 		   $input = "INSERT INTO jadwal (id_proyek, id_sub, tanggal_mulai_j, tanggal_selesai_j, durasi_kegiatan) VALUES ('$id_proyek','$id_sub','$tanggal_mulai_j','$tanggal_selesai_j','$durasi_kegiatan')";
